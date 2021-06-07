@@ -1,4 +1,4 @@
-# Coordinate 的随手记录
+# Coordinate35 的随手记录
 
 之前尝试过在 blog.coordinate35.cn 里面发布自己的文章，但是维护一个服务实在是太麻烦了。之后就记录在这个地方吧。
 
