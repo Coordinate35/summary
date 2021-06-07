@@ -386,5 +386,3 @@ func (ms *MockIService) SendHTTPRequest(
 举个例子：如果一个包依赖了另一个包的具体实现，比如说示例代码中的 confirmer。这个时候你想要去写单测，很可能就使用了 Monkey 去给那个方法打桩。然后打桩还打不了，因为我们没办法把打过桩的这个对象注入到我们测试的单元中。这时候很有可能就会把 cfm 这个变量写成一个全局变量，然后想到用GoStub 去给这个全局变量打桩。代码这样去写很显然是不合理的。
 
 因此，写单测的时候无论如何都应该优先使用 Mock（毕竟 Google 官方也只提供了 gomock  这个工具，说明官方认为这个就已经够用了）。当要用到 GoStub 和 Monkey 时，先考虑清楚是不是代码写的不合理，然后确认使用场景之后，再合理选择使用。
-
-原文链接：https://blog.coordinate35.cn/html/article.html?type=3&article_id=18
