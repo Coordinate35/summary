@@ -70,3 +70,4 @@ B 站接入层处于从迭代效率至上阶段过来，稳定性尚未引起重
 
 # 参考资料
 * bilibili 故障复盘：https://mp.weixin.qq.com/s/nGtC5lBX_Iaj57HIdXq3Qg
+* bilibili 服务注册发现中心 api 文档：https://github.com/bilibili/discovery/blob/master/doc/api.md
