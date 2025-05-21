@@ -1,6 +1,7 @@
 | 作者 | 版本号 | 时间 | 内容 |
 | :--- | :--- | :--- | :--- |
-| Coordinate35 | v1.0.0 | 2025-05-20 | 故障详情与大纲 |
+| Coordinate35 | v0.1.0 | 2025-05-20 | 故障详情与大纲 |
+| Coordinate35 | v1.0.0 | 2025-05-22 | 初稿 |
 
 今天在朋友圈偶然看到这个故障，感觉这个故障非常典型，但是公开出来的资料分析感觉可以更进一步。
 同时担心以后我曾经做过的事情就忘记了，因此借这个机会记录下来
@@ -67,8 +68,8 @@ crash 掉的实例被 k8s 拉起来后，由于内存占用过高，突破了 k8
 # 感受
 
 永远对线上保持一颗**敬畏**的心，永远不要觉得你能评估一个变更的影响面。同时正是因为影响面是不可评估的，所以**变更流程**的非常重要。核心原因: 你很难捋明白你的逻辑依赖了哪些假设，以及这些假设被打破了会引起什么蝴蝶效应。参考：
-1. [假设的陷阱](../2022-06-26 假设的陷阱/假设的陷阱.md)
-2. [软件工程的理想主义](../2024-01-02 软件工程的理想主义/软件工程的理想主义.md)
+1. [假设的陷阱](../2022-06-26%20假设的陷阱/假设的陷阱.md)
+2. [软件工程的理想主义](../2024-01-02%20软件工程的理想主义/软件工程的理想主义.md)
 
 变更路由顺序属于**非常规变更**。
 1. 非常规变更更是需要注重变更流程.
@@ -152,5 +153,5 @@ crash 掉的实例被 k8s 拉起来后，由于内存占用过高，突破了 k8
 
 # 参考资料
 
-1. [!事故报告原文](https://engineering.atspotify.com/2025/05/incident-report-spotify-outage-on-april-16-2025)
-2. [!Envoy filter 加载顺序配置](https://www.envoyproxy.io/docs/envoy/latest/intro/arch_overview/http/http_filters)
+1. [事故报告原文](https://engineering.atspotify.com/2025/05/incident-report-spotify-outage-on-april-16-2025)
+2. [Envoy filter 加载顺序配置](https://www.envoyproxy.io/docs/envoy/latest/intro/arch_overview/http/http_filters)
